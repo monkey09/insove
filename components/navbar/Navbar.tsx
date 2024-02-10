@@ -1,8 +1,17 @@
+import { DNavbar } from "./DNavbar"
 import { MNavbar } from "./MNavbar"
+import { NavbarLinks } from "./NavbarLinks"
 
-export const Navbar= () => {
-  const links = ['home', 'doctors', 'department', 'services', 'blog', 'contact']
+export const Navbar= ({links}: {links: string[]}) => {
+  
   return (
-    <MNavbar links={links} />
+    <>
+      <MNavbar>
+        <NavbarLinks links={links} />
+      </MNavbar>
+      <DNavbar>
+        <NavbarLinks links={links} />
+      </DNavbar>
+    </>
   )
 }

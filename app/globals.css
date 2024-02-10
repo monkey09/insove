@@ -14,19 +14,19 @@ h1, h2, h3, h4, h5, h6 {
   @apply text-primary leading-[120%];
 }
 
-h1 {
+.h1 {
   @apply text-[36px] xl:text-[64px] font-semibold;
 }
 
-h2 {
+.h2 {
   @apply text-[30px] xl:text-[44px] font-semibold capitalize tracking-[0.44px];
 }
 
-h3 {
+.h3 {
   @apply text-[20px] xl:text-[26px] font-semibold;
 }
 
-h3 {
+.h4 {
   @apply text-[20px] xl:text-[26px] font-semibold capitalize;
 }
 
@@ -55,7 +55,7 @@ h3 {
 }
 
 .input, .select {
-  @apply w-full rounded-[10px] h-[66px] outline-none border border-[#dbdfdf] text-secondary font-light placeholder:font-light placeholder:text-secondary;
+  @apply w-full rounded-[10px] h-[66px] outline-none border border-[#dbdfdf] focus:border-accent has-[:focus]:border-accent text-secondary font-light placeholder:font-light placeholder:text-secondary;
 }
 
 .input {

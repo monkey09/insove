@@ -1,6 +1,8 @@
-import "./globals.css"
 import { poppins } from "./utils"
 import type { Metadata } from "next"
+import "./globals.css"
+import 'swiper/css'
+import 'swiper/css/pagination'
 
 export const metadata: Metadata = {
   title: "Insove",
@@ -13,7 +15,7 @@ const RootLayout = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={poppins}>{children}</body>
     </html>
   )
